@@ -97,9 +97,9 @@ export default function injectSagasIntoClass (Klass, input, output) {
     if (DEBUG) {
       console.log('component will unmount')
     }
-    if (this._keaRunningSaga) {
-      cancelSaga(this._keaRunningSaga)
-    }
+    // if (this._keaRunningSaga) {
+    //   cancelSaga(this._keaRunningSaga)
+    // }
 
     originalComponentWillUnmount && originalComponentWillUnmount.bind(this)()
   }
